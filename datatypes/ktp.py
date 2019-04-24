@@ -40,11 +40,10 @@ class Datatype:
             return dtm.strftime('%d%m%y')
 
     def generate_data(self):
-
         print "[*] Generating data..."
         nik = ''
         
-        for single_ni in range(0, 100000 * self.datasize):
+        for single_nik in range(0, 100000 * self.datasize):
             nik += "{}{}{}".format(self.generate_no_kk(),self.generate_random_date(),self.generate_no_urut()) + ', '
         
         return nik
